@@ -91,6 +91,12 @@ phases:
                       cpu: 500m
                     requests:
                       cpu: 200m
+                  env:
+                    - name: api.payment.url
+                      valueFrom:
+                        configMapKeyRef:
+                          name: my-config
+                          key: api.payment.url
                   imagePullPolicy: Always
                   readinessProbe:
                     httpGet:
