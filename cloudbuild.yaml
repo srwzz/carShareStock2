@@ -94,7 +94,7 @@ steps:
                     periodSeconds: 5
                     failureThreshold: 5
         EOF
-substitutions:
+substitutions: 
   _PROJECT_NAME: stock
 options:
   env:
