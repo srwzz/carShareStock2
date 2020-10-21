@@ -3,7 +3,7 @@ version: 0.2
 env:
   variables:
     _PROJECT_NAME: "carsharestock"
-    _ECR_NAME: "carsharestock"
+    _ECR_NAME: "user31carsharestock"
     _NAMESPACE: "carshare"
     _AWS_REGION: "ap-southeast-2"
 
