@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    _PROJECT_NAME: "carsharestock"
+    _PROJECT_NAME: "carshare"
     _ECR_NAME: "user31carsharestock"
     _NAMESPACE: "carshare"
     _AWS_REGION: "ap-southeast-2"
@@ -26,7 +26,8 @@ phases:
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - echo start command
      # - $(aws ecr get-login --no-include-email --region $_AWS_REGION)
-      - docker login --username AWS -p $(aws ecr get-login-password --region ap-southeast-2) 496278789073.dkr.ecr.ap-southeast-2.amazonaws.com
+      - docker login --username AWS -p $(aws ecr get-login-password --region ap-southeast-2) 467263215646.dkr.ecr.ap-southeast-2.amazonaws.com
+      
   build:
     commands:
       - echo Build started on `date`
