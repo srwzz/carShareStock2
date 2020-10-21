@@ -37,6 +37,11 @@ logging:
     org.springframework.cloud: debug
 server:
   port: 8085
+  
+api:
+  order:
+    url: http://localhost:8081
+  
 ---
 
 spring:
@@ -62,3 +67,7 @@ spring:
         event-out:
           destination: carshare
           contentType: application/json
+          
+api:
+  order:
+    url: http://carshareorder:8080
